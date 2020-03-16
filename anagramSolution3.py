@@ -1,6 +1,8 @@
 # using Counter: O(n) solution
 # space in exchange of time
 # from collections import Counter
+
+
 def anagramSolution3(s1, s2):
     if len(s1) != len(s2):
         return False
@@ -20,4 +22,6 @@ def anagramSolution3(s1, s2):
         j += 1
     # return c1 == c2
     return stillOK
+
+
 print(anagramSolution3('apple', 'plfap'))
