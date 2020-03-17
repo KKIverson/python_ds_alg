@@ -1,3 +1,5 @@
+# -*-coding: utf-8 -*-
+# 括号匹配算法（stack实现）
 from pythonds.basic.stack import Stack
 
 
