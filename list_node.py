@@ -48,17 +48,35 @@ class UnsortedList(object):
             current = current.getNext()
         return False
 
-    def remove(self,item):
+    def remove(self, item):
         current = self.head
         previous = None
         found = False
-        while not found:
+        while not found and current is not None:
             if current.getData() == item:
                 found = True
             else:
                 previous = current
                 current = current.getNext()
-        if previous is None:
-            self.head = current.getNext()
-        else:
-            previous.setNext(current.getNext())
+        if current is not None:
+            if previous is None:
+                self.head = current.getNext()
+            else:
+                previous.setNext(current.getNext())
+
+
+def main():
+    ul = UnsortedList()
+    ul.add(1)
+    ul.add(2)
+    ul.add(3)
+    print(ul.size())
+    print(ul.isEmpty())
+    for i in range(1, 4):
+        ul.remove(i)
+    print(ul.size())
+    print(ul.isEmpty())
+
+
+if __name__ == '__main__':
+    main()
