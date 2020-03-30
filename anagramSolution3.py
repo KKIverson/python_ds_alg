@@ -2,7 +2,8 @@
 # space in exchange of time
 # from collections import Counter
 
-
+# 空间换时间，形成字典，比对字典中key对应的value是否相等
+# 时间复杂度为O(n)
 def anagramSolution3(s1, s2):
     if len(s1) != len(s2):
         return False

@@ -1,4 +1,5 @@
 # solution1: O(n^2)
+# 对s1中的元素挨个在s2中搜索，搜索到的记为None
 def anagramSolution1(s1, s2):
     if len(s1) != len(s2):
         return False

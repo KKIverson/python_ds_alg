@@ -1,4 +1,5 @@
 # solution2: O(nlogn)
+# 对s1和s2进行排序，然后一一比对
 def anagramSolution2(s1, s2):
     if len(s1) != len(s2):
         return False
